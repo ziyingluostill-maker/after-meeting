@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Transcribe meeting audio for meeting-minutes-from-audio skill.
+"""Transcribe meeting audio for the after-meeting skill.
 
 Uses afconvert (macOS) to WAV when needed, then openai-whisper via numpy
 (avoids Whisper's ffmpeg dependency which often fails on this machine).

@@ -43,13 +43,17 @@ description: >-
 
 本机常用：`afconvert`（无 ffmpeg）、`python3 -m whisper` 经 numpy 读 WAV（Whisper 内置 ffmpeg 加载常失败）。
 
+脚本路径相对本 skill 目录（插件安装后由 Agent 定位 skill 根目录）：
+
 ```bash
-python3 ~/.cursor/skills/after-meeting/scripts/transcribe_audio.py \
+python3 scripts/transcribe_audio.py \
   "/path/to/recording.m4a" \
   --out-dir /tmp/mtg_minutes_xxx \
   --model medium \
   --language zh
 ```
+
+若相对路径找不到，用 skill 目录的绝对路径调用同一脚本。
 
 - 需要长时间跑：Shell `block_until_ms` 设够（medium 约 10min+/小时音频），或后台跑并轮询输出。
 - 转写完成后读 `transcript.txt`；**不要把整篇原文贴进对用户回复**，只落盘。

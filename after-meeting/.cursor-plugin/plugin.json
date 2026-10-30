@@ -1,0 +1,12 @@
+{
+  "name": "after-meeting",
+  "version": "1.0.0",
+  "description": "Transcribe meeting audio (m4a/mp3/wav) with Whisper and produce action-oriented minutes: what to do, who owns it, DDL, and plan.",
+  "author": {
+    "name": "ziyingluostill-maker"
+  },
+  "repository": "https://github.com/ziyingluostill-maker/after-meeting",
+  "homepage": "https://github.com/ziyingluostill-maker/after-meeting",
+  "license": "MIT",
+  "keywords": ["meeting", "minutes", "whisper", "transcript", "action-items", "ddl"]
+}

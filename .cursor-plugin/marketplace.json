@@ -1,0 +1,21 @@
+{
+  "name": "after-meeting-marketplace",
+  "owner": {
+    "name": "ziyingluostill-maker"
+  },
+  "metadata": {
+    "description": "Meeting audio to action-oriented minutes",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "after-meeting",
+      "source": "after-meeting",
+      "description": "Transcribe meeting recordings and produce minutes with owners, DDLs, and plans",
+      "version": "1.0.0",
+      "keywords": ["meeting", "minutes", "whisper", "transcript", "action-items"],
+      "category": "productivity",
+      "tags": ["meeting", "asr", "excel"]
+    }
+  ]
+}
